@@ -14,7 +14,7 @@ class CustomStreamListener(tweepy.StreamListener):
         print status.text
         reply = status.user.screen_name
         print status.user.screen_name
-        weather_com_result = pywapi.get_weather_from_weather_com('92692', units ='imperial') #can be imperial or metric
+        weather_com_result = pywapi.get_weather_from_weather_com('zipcodehere', units ='imperial') #can be imperial or metric
         now = time.strftime("[%I:%M %p] ")
         api.update_status(now + "@" + reply + " It is currently " + weather_com_result['current_conditions']['text'].lower() + " and " + weather_com_result['current_conditions']['temperature'] + "F.", in_reply_to_status_id = status.id)
 
