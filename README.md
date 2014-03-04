@@ -19,3 +19,8 @@ To use reply.py, tweet @yourbot with any message.
 If you want to mess around and change the settings on this, just check the documentation for Tweepy and pywapi.
 
 Usage:
+===============
+
+I run the bot with the CMD file that I included.
+
+Edit it before executing!
